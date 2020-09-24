@@ -2,23 +2,39 @@
 
 .footer {
   width: 100%;
-  background-color: #f7f7f7;
-  margin-top: -10px;
+  background-color: #98eae080;
   padding: 0 50px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-left: 2.5rem;
+
+  hr{
+    width: 2em;
+    height: 0.5rem;
+    background-color: #000;
+    border-radius: 1rem;
+  }
 }
 
 .footer-content {
   width: 100%;
   position: relative;
   margin: auto;
+  display: flex;
+  justify-content: center;
   padding-top: 1rem;
 }
 
 .badges {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  width: auto;
+  max-width: 75%;
 }
 .badges img {
   width: 1.3rem;
@@ -29,6 +45,7 @@
 .badges > a {
   display: flex;
   justify-content: center;
+  background-color: #fff;
   align-items: center;
   width: fit-content;
   font-size: 1rem;
@@ -42,41 +59,35 @@
   color: #000;
 }
 
-.bottom-row {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  padding-bottom: 0;
-  a {
-    text-decoration: none;
-    color: #000;
-    padding: 1rem;
-    text-align: center;
-    display: inline-flex;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-  }
-
-  img {
-    width: 25px;
-    height: 25px;
-    margin-right: 5px;
+.partner-logo {
+  display: block;
+  margin:auto;
+  text-align: center;
+  padding:25px 0 ;
+  img{
+    max-width: 250px;
+    max-height: 250px;
   }
 }
 
+
 @media only screen and (max-width: 800px) {
+
   .footer {
     padding: 0 15px;
+  }
+
+  .footer-content {
+    width: 100%;
   }
 
   .badges > a {
     padding: 2px 5px;
     margin: 8px 3px;
     cursor: pointer;
-    border: 3px solid #000;
+    border: 2px solid #000;
     justify-content: space-between;
-    font-weight: 400;
+    font-weight: 600;
   }
 
   .bottom-row {
@@ -94,7 +105,8 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
+
   .footer {
     background-position: center;
   }
